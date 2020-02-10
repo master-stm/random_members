@@ -1,0 +1,9 @@
+import random
+
+list = []
+
+members_no = int(input("How many players? "))
+for i in range(members_no):
+    member = input("enter player: ")
+    list.append(member)
+print(random.choices(list, k=int(len(list)/2)))
